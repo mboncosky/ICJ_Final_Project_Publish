@@ -1,0 +1,31 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Index page title{% endblock %}
+
+{% block page_description %}The index search description for this page goes here.{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class="mainTitle">MLB Ballparks</h1>
+  <p>Check out some of the ballparks used in Major League Baseball!</p>
+  <h2>Here are two of my favorites:</h2>
+  <p>Explore their pages to learn more about them.</p>
+  <div class="row">
+    {% for stadium in ballparks.stadiums %}
+      <div class="col">
+        <img src="img/{{ stadium.slug }}.jpg" alt="" class="img-fluid ballpark-photo">
+        <h3><a href="ballparks/{{ stadium.slug }}.html">{{ stadium.name }}</a></h3>
+      </div>
+    {% endfor %}
+  </div>
+  <br>
+  <h2>More Ballparks</h2>
+  <p>Click the links to visit the team website.</p>
+  <hr>
+  {% for park in list.parks %}
+    <h3><a href="{{ park.url }}" target="_blank">{{ park.name }}</a></h3>
+    <p>{{ park.address}}, {{ park.city }}, {{ park.state }} {{ park.zip }}</p>
+    <hr>
+  {% endfor %}
+</div>
+{% endblock %}

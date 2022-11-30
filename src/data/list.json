@@ -1,0 +1,41 @@
+{
+    "parks": [
+      {
+        "name": "Fenway Park",
+        "slug": "FenwayPark",
+        "url": "https://www.redsox.com/",
+        "address": "4 Jersey St.",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02215"
+      },
+      {
+        "name": "PNC Park",
+        "slug": "PNCPark",
+        "url": "https://www.pirates.com/",
+        "address": "115 Federal St.",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": 15212
+      },
+      {
+        "name": "Dodger Stadium",
+        "slug": "DodgerStadium",
+        "url": "http://www.dodgers.com/",
+        "address": "1000 Vin Scully Ave.",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": 90012
+      },
+      {
+        "name": "Yankee Stadium",
+        "slug": "YankeeStadium",
+        "url": "https://www.yankees.com/",
+        "address": "1 E 161 St",
+        "city": "The Bronx",
+        "state": "NY",
+        "zip": 10451
+      }
+    ]
+  }
+  

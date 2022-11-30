@@ -1,0 +1,28 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block page_description %}{{ title }} by {{ author }}{% endblock %}
+
+{% block content %}
+  <article class="container">
+    <div class="row">
+      <div class="col-sm-4">
+          <img src="../img/{{ slug }}.jpg" alt="" class="img-fluid md-4 ballpark-photo">
+      </div>
+      <div class="col-sm-8"> 
+          <h1 class="{{ city }}Title">{{ name }}</h1>
+    <p>Home of the {{ city }} {{ team_name }}!</p>
+    <ul>
+        <li>Built in {{year_built}}.</li>
+        <li>Capacity: {{capacity}}</li>
+        <li>{{fun_fact1}}</li>
+        <li>{{fun_fact2}}</li>
+    </ul>
+    <h3><a href="{{ stadium.url }}" target="_blank">{{ city }} {{ team_name}} website</a></h3>
+      </div>
+    </div>
+  </article>
+{% endblock %}
